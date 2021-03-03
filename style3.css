@@ -1,0 +1,28 @@
+.header{
+  text-align: center;
+}
+.photo{
+  margin-top: 50px;
+}
+.result{
+  width: 300px;
+  height: 50px;
+}
+h6{
+  margin-top: -20px;
+}
+
+.photoset{
+ display: flex;
+ width: 100%;
+ text-align: center;
+}
+.photoset img{
+  
+  width:300px;
+  height: 300px;
+  margin:50px;
+}
+.hidden{
+  display: none;
+}
