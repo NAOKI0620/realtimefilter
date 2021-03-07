@@ -7,43 +7,11 @@ let hide = [];
 let inputText = $(this).val();
 console.log(inputText);
 
+let chono=$('.image-element-text').text();
+console.log(chono);
 
-  if (inputText != '') {
-   
-     let targetText = inputText;
-     console.log(targetText);
-     
-    if(targetText=="長野久義" || targetText=="野球選手"){
-      $('.photot,.photoh,.photok').addClass('hidden');
-      
-    }else if(targetText=="千鳥"　|| targetText=="面白い"){
-     $('.photoc,.photoh,.photok').addClass('hidden');
-     
-    }else if(targetText=="浜辺美波" || targetText=="かわいい"){
-      $('.photoc,.photot,.photok').addClass('hidden');
-    }else if(targetText=="かまいたち" || targetText=="サイコパス"){
-      $('.photoc,.photot,.photoh').addClass('hidden');
-    }
-   
-  }
-};
+if (inputText.indexOf(chono) > -1) {
+  $('.photot,.photoh,.photok').addClass('hidden');
+}
 
-  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
+}
