@@ -14,22 +14,30 @@ let kamaitati=$('.image-element-text4').text();
 
 
 if (chono.indexOf(inputText) > -1) {
-  $('.photot,.photoh,.photok').addClass('hidden');
+  $('.photoc').removeClass('hidden');
   
-}
+}else
+  $('.photoc').addClass('hidden');
+
 if(tidori.indexOf(inputText) > -1) {
-  $('.photoc,.photoh,.photok').addClass('hidden');
-}
+  $('.photot').removeClass('hidden');
+  
+}else
+  $('.photot').addClass('hidden');
 if(hamabe.indexOf(inputText) > -1){
-  $('.photoc,.photot,.photok').addClass('hidden');
-}
+  $('.photoh').removeClass('hidden');
+  
+}else
+  $('.photoh').addClass('hidden');
 
 if(kamaitati.indexOf(inputText) > -1){
-  $('.photoc,.photot,.photoh').addClass('hidden');
-
+ $('.photok').removeClass('hidden');
+  
+}else
+  $('.photok').addClass('hidden');
 }
 
-}
+
 
 
 
